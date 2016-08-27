@@ -6,7 +6,47 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 ---
     
     
-##Useful Shell Commands 
+##Useful Shell Commands  
+###Basics
+**Display current working directory path**  
+`pwd`  
+
+**Change working directory**  
+`cd subfolder`  
+*OR*  
+`cd /path/to/directory`  
+
+**Directory listing**  
+`ls`  
+*OR*  
+`ls -a /path/to/directory`  
+* -l = List  
+* -a = All Files  
+
+**Make directory**  
+`mkdir directoryname`  
+
+**Remove file or directory**  
+`rm /path/to/thing`  
+*OR*  
+`rm -r directory`  
+* -r = Recursive (required if directory has things in it) 
+
+**Change user** (Change to `otherperson`) 
+`su otherperson`  
+
+**Run as super user**  
+`sudo command --option`  
+
+**Change password**  
+`passw`  
+
+**Show shell history**  
+`history`  
+
+**Exit the shell**  
+`exit` 
+
 ###Environment
 **Show one environment variable** (This example: $HOME)  
 `echo $HOME`  
@@ -29,11 +69,11 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 ###File Display  
 **Display an entire file**  
 `cat filename`  
--OR-  
+*OR*  
 `cat < filename`  
 
-**Add line numbers to `cat` output ("nl")**  
-`cat filename | nl~`
+**Add line numbers to `cat` output**  
+`cat filename | nl`
 
 **Octal dump**  
 `od -cb filename.txt`
@@ -48,7 +88,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 
 **Open GUI Application and detact from terminal**  
 `gedit &!`  
--OR-  
+*OR*  
 `nohup google-chrome "http://charlesboyd.me" </dev/null &>/dev/null &!`  
 
 ###Third-Party
@@ -68,9 +108,9 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `du -h`
 
 **Watch file updates**  
-  * -f = follow   
-  * -F = follow and retry  
 `tail -f filename.txt`  
+* -f = follow   
+* -F = follow and retry
 
 **Watch directory changes**  
 `watch "ls -lrt | tail -10"`  
