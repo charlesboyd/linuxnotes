@@ -1,16 +1,15 @@
 #Linux Notes
-My personal list of notes and shell (bash) commands I've found usefull  
+My personal list of notes and shell (bash) commands I've found usefull.
+All paths below can be either relative or absolute, regardless of the type shown.  
 By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)  
 
 ---
 
-##Basics
+##Basic Shell Commands
 **Display the path of the current working directory**  
 `pwd`  
 
 **Change working directory**  
-`cd subfolder`  
-*OR*  
 `cd /path/to/directory`  
 
 **Directory listing**  
@@ -159,6 +158,10 @@ Where [perm] can be several different [string types](http://www.grymoire.com/Uni
 *or*  
 `vi`  
 
+**Package Manager** (e.g. install)  
+`apt-get install packagename`  
+
+
 ##Simple Commands  
  **Display Current Date/Time**  
 `date`  
@@ -166,8 +169,14 @@ Where [perm] can be several different [string types](http://www.grymoire.com/Uni
 **Display Running Processes**  
 `top`  
 
+**Clear the console display**  
+`clear` 
+
 **Output a given string**  
 `echo "Hello World"`  
+
+**Display network configuration**  
+`ifconfig`  
 
 **Display Mail Queue**  
 `mailq`  
