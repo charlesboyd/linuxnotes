@@ -124,6 +124,15 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `ssh username@example.com -L 13306:localhost:3306`
 
 
+###Client/Server
+**Output URL Responce**
+curl example.com
+* -d "Payload here" = Send this data in request and change type to POST
+* -X PUT = Change type of request
+
+**Get and save file**
+wget example.com/filename
+
 ###Other
 **Display Mail Queue**  
 `mailq`  
