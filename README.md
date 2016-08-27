@@ -8,7 +8,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
     
 ##Useful Shell Commands  
 ###Basics
-**Display current working directory path**  
+**Display the path of the current working directory**  
 `pwd`  
 
 **Change working directory**  
@@ -19,7 +19,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Directory listing**  
 `ls`  
 *OR*  
-`ls -a /path/to/directory`  
+`ls -la /path/to/directory`  
 * -l = List  
 * -a = All Files  
 
@@ -32,14 +32,14 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `rm -r directory`  
 * -r = Recursive (required if directory has things in it) 
 
-**Change user** (Change to `otherperson`)  
+**Change user** (E.g. change to `otherperson`)  
 `su otherperson`  
 
 **Run as super user**  
 `sudo command --option`  
 
 **Change password**  
-`passw`  
+`passwd`  
 
 **Get infomation on a command** (Example: `ls`)  
 `man ls`
@@ -136,7 +136,12 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Retrieve and save remote file to working directory**
 `wget example.com/filename`
 
-###Other
+###Simple Commands  
+ **Display Current Date/Time**  
+`date`  
+
+**Display Running Processes**  
+`top`    
+
 **Display Mail Queue**  
 `mailq`  
-
