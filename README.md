@@ -2,12 +2,9 @@
 My personal list of notes and shell (bash) commands I've found usefull  
 By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)  
 
-
 ---
-    
-    
-##Useful Shell Commands  
-###Basics
+
+##Basics
 **Display the path of the current working directory**  
 `pwd`  
 
@@ -50,7 +47,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Exit the shell**  
 `exit` 
 
-###Environment
+##Environment
 **Show one environment variable** (This example: $HOME)  
 `echo $HOME`  
 
@@ -61,7 +58,16 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `export PATH=$PATH:/path/to/dir/`  
 
 
-###DNS
+##Permissions and Ownership
+**Change permissions of a file/directory**  
+`chmod [perm] filename`  
+Where [perm] can be several different [string types](http://www.grymoire.com/Unix/Permissions.html#uh-2)  
+
+**Change the owner of a file/directory**  
+`chown newowner file.txt`
+* -R = Operate on files and directories recursively.
+
+##DNS
 **IP DNS Lookup**  
 `dig google.com`  
 
@@ -69,7 +75,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `dig -x 8.8.8.8`  
 
 
-###File Display  
+##File Display and Console Output
 **Display an entire file**  
 `cat filename`  
 *OR*  
@@ -81,11 +87,10 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Octal dump**  
 `od -cb filename.txt`
 
-###Console Outout  
 **Output to file and to the screen**  
-`command -option | tee log.txt`
+`command -option | tee log.txt`  
 
-###GUI and Detaching
+##GUI and Detaching
 **Open chrome to a URL**  
 `google-chrome bing.com`  
 
@@ -94,16 +99,18 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 *OR*  
 `nohup google-chrome "http://charlesboyd.me" </dev/null &>/dev/null &!`  
 
-###Third-Party
+
+##Third-Party
 **Weather**  
 `curl wttr.in/city_name`  
   
-###Shell Scripting
+  
+##Shell Scripting  
 **Save output to a bash variable** (Example command: `ls -l`)  
 `OUTPUT="$(ls -1)"`  
 `echo "${OUTPUT}"`  
   
-###Files and directories
+##Files and directories  
 **Updates access time of file OR create if it does not exist**  
 `touch filename.txt`
 
@@ -119,15 +126,20 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `watch "ls -lrt | tail -10"`  
 
 
-###Logins
+##Logins  
 **Log into mySQL**  
 `mysql -u root -p`  
 
 **SSH to host** (And forward ports; e.g. Local port 13306 to remote's local port 3306)  
 `ssh username@example.com -L 13306:localhost:3306`
 
+**Shutdown**  
+`sudo shutdown -h now`  
+*or*  
+`sudo poweroff`  
 
-###Client/Server
+
+##Client/Server  
 **Output HTTP Responce**
 `curl example.com`  
 * -d "Payload here" = Send this data in request and change type to POST  
@@ -136,13 +148,18 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Retrieve and save remote file to working directory**
 `wget example.com/filename`
 
-###Common Tools
+
+##Searches  
+*TODO*  
+
+
+##Common Tools  
 **Text editors**  
 `nano`  
 *or*  
 `vi`  
 
-###Simple Commands  
+##Simple Commands  
  **Display Current Date/Time**  
 `date`  
 
