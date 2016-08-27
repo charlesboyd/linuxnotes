@@ -2,12 +2,14 @@
 My personal list of notes and shell commands I've found usefull  
 By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)  
 
+---
 
 ##Single Shell Commands
 **Display Mail Queue**  
 `mailq`  
-
-
+    
+---
+    
 ##United Shell Commands 
 ###Environment
 **Show one environment variable** (This example: $HOME)  
@@ -28,8 +30,8 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `dig -x 8.8.8.8`  
 
 
-###File Display
-**Display an entire file **  
+###File Display  
+**Display an entire file**  
 `cat filename`  
 -OR-  
 `cat < filename`  
@@ -43,7 +45,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `command -option | tee log.txt`
 
 
-###OTher
+###Other
 **Open chrome to a URL**  
 `google-chrome bing.com`  
 
