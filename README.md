@@ -1,16 +1,18 @@
 #Linux Notes
-My personal list of notes and shell commands I've found usefull  
+My personal list of notes and shell (bash) commands I've found usefull  
 By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)  
 
 ---
 
-##Single Shell Commands
+##Useful Simple Shell Commands
 **Display Mail Queue**  
 `mailq`  
     
+    
 ---
     
-##United Shell Commands 
+    
+##Useful United Shell Commands 
 ###Environment
 **Show one environment variable** (This example: $HOME)  
 `echo $HOME`  
@@ -52,7 +54,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Open GUI Application and detact from terminal**  
 `gedit &!`  
 -OR-  
-`nohup google-chrome $urltoopen </dev/null &>/dev/null &!`  
+`nohup google-chrome "http://charlesboyd.me" </dev/null &>/dev/null &!`  
 
 **Save output to a bash variable** (Example command: `ls -l`)  
 `OUTPUT="$(ls -1)"`  
