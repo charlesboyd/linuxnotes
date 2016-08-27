@@ -2,17 +2,11 @@
 My personal list of notes and shell (bash) commands I've found usefull  
 By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)  
 
----
 
-##Useful Simple Shell Commands
-**Display Mail Queue**  
-`mailq`  
-    
-    
 ---
     
     
-##Useful United Shell Commands 
+##Useful Shell Commands 
 ###Environment
 **Show one environment variable** (This example: $HOME)  
 `echo $HOME`  
@@ -41,13 +35,14 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Add line numbers to `cat` output ("nl")**  
 `cat filename | nl~`
 
+**Octal dump**  
+`od -cb filename.txt`
 
 ###Console Outout  
 **Output to file and to the screen**  
 `command -option | tee log.txt`
 
-
-###Other
+###GUI and Detaching
 **Open chrome to a URL**  
 `google-chrome bing.com`  
 
@@ -56,7 +51,40 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 -OR-  
 `nohup google-chrome "http://charlesboyd.me" </dev/null &>/dev/null &!`  
 
+###Third-Party
+**Weather**  
+`curl wttr.in/city_name`  
+  
+###Shell Scripting
 **Save output to a bash variable** (Example command: `ls -l`)  
 `OUTPUT="$(ls -1)"`  
 `echo "${OUTPUT}"`  
+  
+###Files and directories
+**Updates access time of file OR create if it does not exist**  
+`touch filename.txt`
+
+**Directory sizes (human readable)**  
+`du -h`
+
+**Watch file updates**  
+  * -f = follow   
+  * -F = follow and retry  
+`tail -f filename.txt`  
+
+**Watch directory changes**  
+`watch "ls -lrt | tail -10"`  
+
+
+###Logins
+**Log into mySQL**  
+`mysql -u root -p`  
+
+**SSH to server** (And forward local port 13306 to remote local port 3306)  
+`ssh username@example.com -L 13306:localhost:3306`
+
+
+###Other
+**Display Mail Queue**  
+`mailq`  
 
