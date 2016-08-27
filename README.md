@@ -123,7 +123,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Log into mySQL**  
 `mysql -u root -p`  
 
-**SSH to server** (And forward ports. Exmaple: Local port 13306 to remote's local port 3306)  
+**SSH to host** (And forward ports; e.g. Local port 13306 to remote's local port 3306)  
 `ssh username@example.com -L 13306:localhost:3306`
 
 
@@ -136,12 +136,21 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Retrieve and save remote file to working directory**
 `wget example.com/filename`
 
+###Common Tools
+**Text editors**  
+`nano`  
+*or*  
+`vi`  
+
 ###Simple Commands  
  **Display Current Date/Time**  
 `date`  
 
 **Display Running Processes**  
-`top`    
+`top`  
+
+**Output a given string**  
+`echo "Hello World"`  
 
 **Display Mail Queue**  
 `mailq`  
