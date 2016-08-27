@@ -32,7 +32,7 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 `rm -r directory`  
 * -r = Recursive (required if directory has things in it) 
 
-**Change user** (Change to `otherperson`) 
+**Change user** (Change to `otherperson`)  
 `su otherperson`  
 
 **Run as super user**  
@@ -40,6 +40,9 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 
 **Change password**  
 `passw`  
+
+**Get infomation on a command** (Example: `ls`)  
+`man ls`
 
 **Show shell history**  
 `history`  
