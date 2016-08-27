@@ -112,8 +112,8 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 
 **Watch file updates**  
 `tail -f filename.txt`  
-* -f = follow   
-* -F = follow and retry
+* -f = follow  
+* -F = follow and retry  
 
 **Watch directory changes**  
 `watch "ls -lrt | tail -10"`  
@@ -123,18 +123,18 @@ By [Charles Boyd](http://charlesboyd.me/?ref=github-linuxnotes)
 **Log into mySQL**  
 `mysql -u root -p`  
 
-**SSH to server** (And forward local port 13306 to remote local port 3306)  
+**SSH to server** (And forward ports. Exmaple: Local port 13306 to remote's local port 3306)  
 `ssh username@example.com -L 13306:localhost:3306`
 
 
 ###Client/Server
-**Output URL Responce**
-curl example.com
-* -d "Payload here" = Send this data in request and change type to POST
-* -X PUT = Change type of request
+**Output HTTP Responce**
+`curl example.com`  
+* -d "Payload here" = Send this data in request and change type to POST  
+* -X PUT = Change type of request (example: change to PUT)    
 
-**Get and save file**
-wget example.com/filename
+**Retrieve and save remote file to working directory**
+`wget example.com/filename`
 
 ###Other
 **Display Mail Queue**  
