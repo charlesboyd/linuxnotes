@@ -180,6 +180,9 @@ Where [perm] can be several different [string types](http://www.grymoire.com/Uni
 **Output a given string**  
 `echo "Hello World"`  
 
+**Print the current user's name**  
+`whoami` 
+
 **Display network configuration**  
 `ifconfig`  
 *or*
