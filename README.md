@@ -106,8 +106,10 @@ Where [perm] can be several different [string types](http://www.grymoire.com/Uni
   
 ##Shell Scripting  
 **Save output to a bash variable** (Example command: `ls -l`)  
-`OUTPUT="$(ls -1)"`  
-`echo "${OUTPUT}"`  
+`MYVAR="$(ls -1)"`  
+
+**Print saved bash variable**   
+`echo "${MYVAR}"`  
   
 ##Files and directories  
 **Updates access time of file OR create if it does not exist**  
@@ -124,6 +126,9 @@ Where [perm] can be several different [string types](http://www.grymoire.com/Uni
 **Watch directory changes**  
 `watch "ls -lrt | tail -10"`  
 
+**Create link (or "shortcut")**  
+`ln -s /path/to/target /the/link/name`
+* -s = [soft link](http://askubuntu.com/questions/108771/what-is-the-difference-between-a-hard-link-and-a-symbolic-link)
 
 ##Logins  
 **Log into mySQL**  
@@ -177,6 +182,8 @@ Where [perm] can be several different [string types](http://www.grymoire.com/Uni
 
 **Display network configuration**  
 `ifconfig`  
+*or*
+`ifconfig /all`  
 
 **Display Mail Queue**  
 `mailq`  
