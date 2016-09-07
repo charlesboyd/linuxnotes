@@ -102,7 +102,10 @@ Where [perm] can be several different [string types](http://www.grymoire.com/Uni
 ##Third-Party
 **Weather**  
 `curl wttr.in/city_name`  
-  
+   
+**Check PHP syntax**   
+`php -l filename.php`   
+   
   
 ##Shell Scripting  
 **Save output to a bash variable** (Example command: `ls -l`)  
